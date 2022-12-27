@@ -1,0 +1,1 @@
+cmd_/home/work/KERNEL_MODULE/I2C_Device_Driver/lm75a/Module.symvers := sed 's/\.ko$$/\.o/' /home/work/KERNEL_MODULE/I2C_Device_Driver/lm75a/modules.order | scripts/mod/modpost -m -a  -o /home/work/KERNEL_MODULE/I2C_Device_Driver/lm75a/Module.symvers -e -i Module.symvers   -T -

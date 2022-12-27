@@ -186,13 +186,13 @@ static unsigned int myIntrDrv_poll(struct file *filp, struct poll_table_struct* 
 {
     unsigned int poll_bit = 0;
 
-    printk(KERN_NOTICE"[jaesun] poll_wait WaitQueue\r\n");
+    printk("[jaesun] poll_wait WaitQueue\r\n");
 
     //poll_wait(filp, &WaitQueue_Read, wait);
     wake_condition = 0;
     wait_event_interruptible(WaitQueue_Read,wake_condition);
 
-    printk(KERN_NOTICE"[jaesun] poll_wait WaitQueue wake up!!!\r\n");
+    printk("[jaesun] poll_wait WaitQueue wake up!!!\r\n");
 
     poll_bit |= (POLLIN | POLLRDNORM);
 
@@ -239,7 +239,7 @@ static int __init intr_driver_init(void)
         goto r_del;
     }
     
-    if((dev_class = class_create(THIS_MODULE,"etx_class")) == NULL)
+    if((dev_class = class_create(THIS_MODULE,"intr_class")) == NULL)
     {
         pr_err("Cannot create the struct class\n");
         goto r_class;

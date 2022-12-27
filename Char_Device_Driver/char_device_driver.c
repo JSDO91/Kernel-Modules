@@ -113,7 +113,7 @@ static ssize_t myCharDrv_read(struct file *filp, char __user *buf, size_t count,
 
 static unsigned int myCharDrv_poll(struct file *filp, struct poll_table_struct* wait)
 {
-    unsigned int poll_bit;
+    unsigned int poll_bit = 0;
 
     printk(KERN_NOTICE"[jaesun] poll_wait WaitQueue\r\n");
 

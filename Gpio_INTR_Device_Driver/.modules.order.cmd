@@ -1,0 +1,1 @@
+cmd_/home/work/KERNEL_MODULE/Gpio_INTR_Device_Driver/modules.order := {   echo /home/work/KERNEL_MODULE/Gpio_INTR_Device_Driver/gpio_intr_device_driver.ko; :; } | awk '!x[$$0]++' - > /home/work/KERNEL_MODULE/Gpio_INTR_Device_Driver/modules.order
