@@ -1,1 +1,0 @@
-cmd_/home/work/KERNEL_MODULE/I2C_Device_Driver/lm75a/modules.order := {   echo /home/work/KERNEL_MODULE/I2C_Device_Driver/lm75a/lm75a_device_driver.ko; :; } | awk '!x[$$0]++' - > /home/work/KERNEL_MODULE/I2C_Device_Driver/lm75a/modules.order
