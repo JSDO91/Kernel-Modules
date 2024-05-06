@@ -17,8 +17,8 @@
                         status = "okay";
                         temp_sensor: temp_sensor
                         {
-                                compatible = "jaesun,lm75a";
-                                reg = <0x40>;
+                                compatible = "jaesun,temp_sensor";
+                                reg = <0x48>;
                         };
 
                 };
