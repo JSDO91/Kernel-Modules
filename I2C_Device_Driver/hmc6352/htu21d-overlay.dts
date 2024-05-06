@@ -18,7 +18,7 @@
                         temp_sensor: temp_sensor
                         {
                                 compatible = "jaesun,hmc6352";
-                                reg = <0x40>;
+                                reg = <0x48>;
                         };
 
                 };
